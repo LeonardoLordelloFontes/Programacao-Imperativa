@@ -107,7 +107,7 @@ int fib2 (int n) {
     valor1 = 1;
     valor2 = 1;
 
-    if (n <= 2)
+    if (n == 1 || n == 2)
         return 1;
 
     for(int i; i < n - 2; i++) {
