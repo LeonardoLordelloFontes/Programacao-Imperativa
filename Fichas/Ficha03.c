@@ -17,7 +17,7 @@ b)
 
 */
 
-// Exercício 2
+// ExercÃ­cio 2
 
 void swapM (int *x, int *y) {
 
@@ -27,7 +27,7 @@ void swapM (int *x, int *y) {
 
 }
 
-// Exercício 3
+// ExercÃ­cio 3
 
 void swap (int v[], int i, int j) {
 
@@ -36,7 +36,7 @@ void swap (int v[], int i, int j) {
     v[j] = temp;
 }
 
-// Exercício 4
+// ExercÃ­cio 4
 
 int soma (int v[], int N) {
 
@@ -52,7 +52,7 @@ int soma (int v[], int N) {
 
 }
 
-// Exercício 5
+// ExercÃ­cio 5
 
 int maximum (int v[], int N, int *m) {
 
@@ -74,7 +74,7 @@ int maximum (int v[], int N, int *m) {
     }
 }
 
-// Exercício 6
+// ExercÃ­cio 6
 
 void quadrados (int q[], int N) {
 
@@ -86,25 +86,21 @@ void quadrados (int q[], int N) {
 
 }
 
-// Exercício 7
+// ExercÃ­cio 7
 
 
 void pascal (int v[], int N) {
 
-    int contador = 0;
-
     for (int i = 0; i < N; i++) {
 
-        v[contador] = 1;
+        v[i] = 1;
 
-        for (int j = contador - 1; j >= 0; j--) {
+        for (int j = i - 1; j >= 0; j--) {
 
             if (j >= 1)
                 v[j] += v[j-1];
 
             }
-
-        contador++;
     }
 
 }
