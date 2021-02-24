@@ -76,7 +76,5 @@ void triangulo2(int n) {
 
 int main() {
 
-    triangulo2(30);
-
     return 0;
 }
