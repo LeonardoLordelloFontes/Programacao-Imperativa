@@ -196,6 +196,183 @@ int mystrcmp(char s1[], char s2[]) {
     return 0;
 }
 
+// 10
+
+char *mystrstr (char s1[], char s2[]) {
+    
+    char *ps1 = s1;
+    char *ps2 = s2;
+    
+    if ((*s1 == '\0' && *s2 == '\0') || (*s1 != '\0' && *s2 == '\0')) return s1;
+    
+    while (*s1) {
+        
+        if (*s1 == *s2) {
+            
+            ps1 = s1;
+            
+            s1++;
+            s2++;
+            
+            while (*s1 == *s2 && *s1 != '\0') {
+                
+                s1++;
+                s2++;
+                
+            }
+            
+            if (*s2 == '\0') {
+                
+                s1 = ps1;
+                return s1;
+                
+            }
+            
+            else s2 = ps2;
+            
+        }
+        
+        s1++;
+        
+    }
+    
+    return NULL;
+}
+
+// 11
+
+void strrev (char s[]) {
+    
+    int i, j;
+    char temp;
+    
+    for (i = 0; s[i]; i++);
+    
+    for (i -= 1, j = 0; j <= i / 2; j++) {
+        
+        temp = s[i - j];
+        s[i - j] = s[j];
+        s[j] = temp;
+        
+    }
+
+    return;
+}
+
+// 12
+
+void strnoV (char t[]){
+    
+    char * pt = t;
+    
+    for (; *t; t++) {
+    
+    if (*t != 'a' && *t != 'e' && *t != 'i' && *t != 'o' && *t != 'u' && *t != 'A' && *t != 'E' && *t != 'I' && *t != 'O' && *t != 'U') {
+        
+        *pt = *t;
+        pt++;
+        
+        }   
+    
+    }
+    
+    *pt = '\0';
+    t = pt;
+    
+}
+
+// 13
+
+void truncW (char t[], int n){
+    
+    char * pt = t;
+    int i = 0;
+    
+    for (;*t; t++) {
+        
+        if (*t != ' ' && i < n)  {
+            
+            *pt = *t;
+            pt++;
+            i++;
+            
+        }
+        
+        else if (*t == ' ') {
+            
+            *pt = *t;
+            pt++;
+            i = 0;
+            
+        }
+        
+    }
+    
+    *pt = 0;
+    t = pt;  
+    
+}
+
+// 14
+
+char charMaisfreq (char s[]) {
+    
+    int max = 0, chars, i, j;
+    char atual, maisFreq = 0;
+    
+    for (i = 0; s[i]; i++) {
+        
+        atual = s[i];
+        
+        for (chars = 0, j = 0; s[j]; j++) {
+        
+            if (atual == s[j]) chars++;
+        
+        }
+        
+        if (chars > max) {
+            maisFreq = atual;
+            max = chars;
+            
+        }
+        
+    }
+    
+    return maisFreq;
+    
+}
+
+// 15
+
+int iguaisConsecutivos (char s[]) {
+    
+    int chars = 0, max = 0;
+    char atual = *s;
+    
+    
+    for (; *s; s++) {
+        
+        if (atual == *s) {
+            
+            chars++;
+            
+        }
+        
+        else {
+            
+            chars = 1;
+            atual = *s;
+            
+        }
+        
+        if (chars > max) max = chars;
+        
+    }
+    
+    return max;
+
+}
+
 int main () {
 
 }
