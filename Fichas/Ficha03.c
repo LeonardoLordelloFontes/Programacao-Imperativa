@@ -52,7 +52,7 @@ int soma (int v[], int N) {
 
 }
 
-// Exercício 5
+// Exercício 6
 
 int maximum (int v[], int N, int *m) {
 
@@ -74,7 +74,7 @@ int maximum (int v[], int N, int *m) {
     }
 }
 
-// Exercício 6
+// Exercício 7
 
 void quadrados (int q[], int N) {
 
@@ -86,7 +86,7 @@ void quadrados (int q[], int N) {
 
 }
 
-// Exercício 7
+// Exercício 8 a)
 
 
 void pascal (int v[], int N) {
@@ -105,6 +105,13 @@ void pascal (int v[], int N) {
 
 }
 
+// Exercício 8 b)
+
+void pascal2 (int N) {
+
+    
+
+}
 
 main () {
 
