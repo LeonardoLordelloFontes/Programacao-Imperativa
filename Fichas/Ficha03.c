@@ -52,6 +52,28 @@ int soma (int v[], int N) {
 
 }
 
+// Exercício 5
+
+void inverteArray (int v[], int N){
+    int i;
+    
+    for (i = 0; i < N / 2; i++) {
+        
+        swapM (&v[i], &v[N - i - 1]);
+        
+    } 
+}
+
+void inverteArray2 (int v[], int N){
+    int i;
+    
+    for (i = 0; i < N / 2; i++) {
+        
+        swap (v, i, N - i - 1);
+        
+    } 
+}
+
 // Exercício 6
 
 int maximum (int v[], int N, int *m) {
