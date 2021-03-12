@@ -1,22 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Exercicio 1
-/*
-a)
-
-1 1 4
-2 2 6
-3 3 8
-4 4 10
-5 5 12
-
-b)
-
-13
-
-*/
-
 // Exercício 2
 
 void swapM (int *x, int *y) {
@@ -107,6 +91,10 @@ void quadrados (int q[], int N) {
     }
 
 }
+
+// Exercício 8
+
+
 
 main () {
 
