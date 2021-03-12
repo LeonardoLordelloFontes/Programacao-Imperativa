@@ -86,33 +86,6 @@ void quadrados (int q[], int N) {
 
 }
 
-// Exercício 8 a)
-
-
-void pascal (int v[], int N) {
-
-    for (int i = 0; i < N; i++) {
-
-        v[i] = 1;
-
-        for (int j = i - 1; j >= 0; j--) {
-
-            if (j >= 1)
-                v[j] += v[j-1];
-
-            }
-    }
-
-}
-
-// Exercício 8 b)
-
-void pascal2 (int N) {
-
-    
-
-}
-
 main () {
 
 }
