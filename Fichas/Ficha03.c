@@ -112,6 +112,28 @@ void pascal(int v[], int N) {
 
 // Exercício 8 b)
 
+void desenhaTriangulpP (int N){
+    int i,j, v[N];
+
+    for (i = 0; i < N+1; i++) {
+
+        v[i] = 1;
+
+        for (j = 1; j < i; j++) {
+
+            v[i - j] = v[i - j] + v[i - j - 1];
+
+        }
+
+        for (j = 0; j <= i; j++) {
+            printf("%6d", v[j]);
+        }
+
+        putchar('\n');
+
+    }
+}
+
 main () {
 
 }
