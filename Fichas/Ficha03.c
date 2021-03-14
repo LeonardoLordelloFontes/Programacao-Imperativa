@@ -24,9 +24,9 @@ void swap (int v[], int i, int j) {
 
 int soma (int v[], int N) {
 
-    int resultado = 0;
+    int resultado = 0, i;
 
-    for (int i = 0; i < N; i++) {
+    for (i = 0; i < N; i++) {
 
         resultado += v[i];
 
@@ -40,7 +40,9 @@ int soma (int v[], int N) {
 
 void inverteArray (int v[], int N){
     
-    for (int i = 0; i < N / 2; i++) {
+    int i;
+    
+    for (i = 0; i < N / 2; i++) {
         
         swapM (&v[i], &v[N - i - 1]);
         
@@ -49,7 +51,9 @@ void inverteArray (int v[], int N){
 
 void inverteArray2 (int v[], int N){
     
-    for (int i = 0; i < N / 2; i++) {
+    int i;
+    
+    for (i = 0; i < N / 2; i++) {
         
         swap (v, i, N - i - 1);
         
@@ -64,10 +68,12 @@ int maximum (int v[], int N, int *m) {
         return 1;
 
     else {
+        
+        int i;
 
         *m = v[0];
 
-        for (int i = 0; i < N; i++) {
+        for (i = 0; i < N; i++) {
 
             if (v[i] > *m)
                 *m = v[i];
@@ -82,7 +88,9 @@ int maximum (int v[], int N, int *m) {
 
 void quadrados (int q[], int N) {
 
-    for (int i = 0; i < N; i++) {
+    int i;
+    
+    for (i = 0; i < N; i++) {
         
         q[i] = (i + 1)*(i + 1);
 
