@@ -90,9 +90,27 @@ void quadrados (int q[], int N) {
 
 }
 
-// Exercício 8
+// Exercício 8 a)
 
+void pascal(int v[], int N) {
 
+    int i,j;
+
+    for (i = 0; i < N+1; i++) {
+
+        v[i] = 1;
+
+        for (j = 1; j < i; j++) {
+
+            v[i - j] = v[i - j] + v[i - j - 1];
+
+        }
+
+    }
+
+}
+
+// Exercício 8 b)
 
 main () {
 
